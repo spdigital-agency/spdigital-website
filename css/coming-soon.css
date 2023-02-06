@@ -36,16 +36,17 @@ div {
     height: 37.5em;
     max-width: 100vw;
     max-height: 100vh;
-    background: white;
+    background: lightblue;
     overflow: hidden;
     max-width: calc(800px - min(6em, 68.58px));
     max-height: 430px;
 }
 
 #screen:hover .logo {
-  top: min(2em, 22.86px);
-  left: min(2em, 22.86px);
-  transform: translate(-17.5%, -17.5%) scale(0.65);
+  top: 0;
+  margin-left:  0;
+  transform: translateX(0) translateY(0);
+
 }
 
 #screen:hover .text-skeleton {
@@ -54,15 +55,14 @@ div {
 
 .logo {
     position: absolute;
-    inset: 0;
-    top: 42.5%;
-    left: 50%;
-    transform: translate(-50%);
+    inset: 50% 0 0 0;
+    margin-left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     height: max-content;
     width: max-content;
     display: flex;
     align-items: center;
-    transition: inset .6s ease-in-out,transform .6s ease-in-out;
+    transition: all .6s ease-in-out;
 }
 
 .logo-img {
