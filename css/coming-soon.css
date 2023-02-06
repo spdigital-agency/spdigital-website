@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  font-family: "League Spartan";
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+
+div {
+  content: "";
+  display: block;
+}
+
+#computer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1vw;
+    width: max-content;
+    max-width: 800px;
+}
+
+#screen {
+    position: relative;
+    border: min(3em, 34.3px) solid black;
+    border-radius: min(3em, 34.3px) min(3em, 34.3px) 0 0;
+    width: 64em;
+    height: 37.5em;
+    max-width: 100vw;
+    max-height: 100vh;
+    background: white;
+    overflow: hidden;
+    max-width: calc(800px - min(6em, 68.58px));
+    max-height: 430px;
+}
+
+#screen:hover .logo {
+  top: min(2em, 22.86px);
+  left: min(2em, 22.86px);
+  transform: translate(-17.5%, -17.5%) scale(0.65);
+}
+
+#screen:hover .text-skeleton {
+  bottom: min(7.5em, 85.73px);
+}
+
+.logo {
+    position: absolute;
+    inset: 0;
+    top: 42.5%;
+    left: 50%;
+    transform: translate(-50%);
+    height: max-content;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    transition: inset .6s ease-in-out,transform .6s ease-in-out;
+}
+
+.logo-img {
+    height: min(7em, 80px);
+    width: 100%;
+    object-fit: contain;
+    max-width: 230px;
+}
+
+span {
+  font-weight: 600;
+  font-size: 5em;
+}
+
+.sp {
+  color: white;
+  background: red;
+  padding: 0.2em 0.08em;
+}
+
+.digital {
+  color: black;
+}
+
+.period {
+  color: red;
+}
+
+
+.text-skeleton {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+  max-width: 343px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -17em;
+  
+  transition: inset .6s ease-in-out;
+}
+
+.skeleton-bar {
+  content: "";
+  width: 100%;
+  height: 1em;
+  max-height: 11.5px;
+  background: lightgrey;
+  margin-bottom: min(1em, 11.43px);
+  border-radius: .25em;
+}
+
+.skeleton-bar:first-of-type {
+  margin-bottom: min(2em, 22.86px);
+  height: 2em;
+  max-height: 23px;
+  width: 50%;
+}
+
+.skeleton-bar:last-of-type {
+  margin-bottom: 0;
+  width: 50%;
+}
+
+
+
+
+
+
+#screen-bottom {
+  background: lightgrey;
+  width: 70em;
+  height: 6.5em;
+  border-radius: 0 0 3em 3em;
+  max-width: 800px;
+  max-height: 74.3px;
+}
+#stand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#stand-top {
+    border-bottom: min(6.5em, 82px) solid grey;
+    border-left: min(2.5em, 28.6px) solid transparent;
+    border-right: min(2.5em, 28.6px) solid transparent;
+    height: 0;
+    width: min(15em, 171.45px);
+}
+#stand-bottom {
+  width: min(25em, 285.75px);
+  height: min(.7em, 8px);
+  background: grey;
+  border-radius: min(.7em, 8px) min(.7em, 8px) 0 0;
+}
+
