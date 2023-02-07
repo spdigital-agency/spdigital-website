@@ -36,17 +36,19 @@ div {
     height: 37.5em;
     max-width: 100vw;
     max-height: 100vh;
-    background: lightblue;
+    background: white;
     overflow: hidden;
     max-width: calc(800px - min(6em, 68.58px));
     max-height: 430px;
 }
 
 #screen:hover .logo {
-  top: 0;
-  margin-left:  0;
-  transform: translateX(0) translateY(0);
+  top: 0; 
+  transform: translateY(0);
+}
 
+#screen:hover .logo-img {
+  width: 65%;
 }
 
 #screen:hover .text-skeleton {
@@ -56,13 +58,15 @@ div {
 .logo {
     position: absolute;
     inset: 50% 0 0 0;
-    margin-left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateY(-50%) scale(1);
+    margin: 0 auto;
     height: max-content;
     width: max-content;
     display: flex;
     align-items: center;
+    justify-content: center;
     transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
 }
 
 .logo-img {
@@ -70,6 +74,8 @@ div {
     width: 100%;
     object-fit: contain;
     max-width: 230px;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
 }
 
 span {
